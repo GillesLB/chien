@@ -1,0 +1,5 @@
+export const ACTIONS = {
+    GET_ADD_DOG: 'GET_ADD_DOG',
+    GET_DELETE_DOG: 'GET_DELETE_DOG',
+    GET_SHOW_DOG: 'GET_SHOW_DOG',
+};

@@ -1,0 +1,27 @@
+
+<table class="table table-striped">
+  <thead class="bg-primary">
+    <tr>
+      <th scope="col" class="col-2">id</th>
+      <th scope="col">Nom</th>
+      <th scope="col">Couleur</th>
+      <th scope="col">Supprimer</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let chien of liste">
+    <tr>
+      <th scope="col">{{chien.truc}}</th>
+      <td>{{chien.nom}}</td>
+      <td>{{chien.couleur}}</td>
+      <td>
+        <button
+          type="button"
+          class="btn btn-danger btn-sm"
+          (click)='onSupprimer(chien)'
+        >
+          X
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
